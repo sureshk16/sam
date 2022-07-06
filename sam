@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage("Welcome"){
+            steps{
+                git branch: 'main', url: 'https://github.com/sureshk16/sam.git'
+                  }
+           }
+    }
+}
